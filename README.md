@@ -8,4 +8,4 @@ Simple graph theory: If all the vertices in a connected graph are of even degree
 
 The graph class will have a method called 'areAllEven()' that takes no parameters, and will test whether or not an instance of the graph class has vertices with an even degree.
 
-There will be two graphs, graph #1 (not all vertices have an even degree) and graph #2 (all vertices have an even degree). The method, areAllEven(), will test both graph #1 and graph #2. See the pdf, logical graph representation, for a visual representation of graphs #1 and #2.
+There will be two graphs, graph #1 (not all vertices have an even degree) and graph #2 (all vertices have an even degree). The method, areAllEven(), will test both graph #1 and graph #2.
