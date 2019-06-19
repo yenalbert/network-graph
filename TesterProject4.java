@@ -6,21 +6,22 @@ import java.util.*;
 public class TesterProject4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Item friend0 = new Item("Alex");
-		Item friend1 = new Item("Bob");
-		Item friend2 = new Item("Sam");
-		graph socialNetworkFriends = new graph();
+		
+	Item friend0 = new Item("Alex");
+	Item friend1 = new Item("Bob");
+	Item friend2 = new Item("Sam");
+		
+	graph socialNetworkFriends = new graph();
         
-		socialNetworkFriends.add_vertex(friend0);
-		socialNetworkFriends.add_vertex(friend1); 
-		socialNetworkFriends.add_vertex(friend2); 
-		socialNetworkFriends.add_edge(0,1);
-		socialNetworkFriends.add_edge(0,2);
-		socialNetworkFriends.add_edge(1,2);
-		socialNetworkFriends.add_edge(1,0);
-		socialNetworkFriends.add_edge(2,0);
-		socialNetworkFriends.add_edge(2,1);
+	socialNetworkFriends.add_vertex(friend0);
+	socialNetworkFriends.add_vertex(friend1); 
+	socialNetworkFriends.add_vertex(friend2); 
+	socialNetworkFriends.add_edge(0,1);
+	socialNetworkFriends.add_edge(0,2);
+	socialNetworkFriends.add_edge(1,2);
+	socialNetworkFriends.add_edge(1,0);
+	socialNetworkFriends.add_edge(2,0);
+	socialNetworkFriends.add_edge(2,1);
         System.out.println("The vertices in graph #1 have an even number of edges: " + socialNetworkFriends.areAllEven());
         System.out.println();
         
@@ -56,27 +57,26 @@ public class TesterProject4 {
  */
         
         Item newFriend0 = new Item("June");
-		Item newFriend1 = new Item("Dan");
-		Item newFriend2 = new Item("Evan");
-		Item newFriend3 = new Item("Frank");
+	Item newFriend1 = new Item("Dan");
+	Item newFriend2 = new Item("Evan");
+	Item newFriend3 = new Item("Frank");
 
-		graph new_socialNetworkFriends = new graph();
+	graph new_socialNetworkFriends = new graph();
         
-		new_socialNetworkFriends.add_vertex(newFriend0);
-		new_socialNetworkFriends.add_vertex(newFriend1); 
-		new_socialNetworkFriends.add_vertex(newFriend2); 
-		new_socialNetworkFriends.add_vertex(newFriend3);
-		new_socialNetworkFriends.add_edge(0,2);
-		new_socialNetworkFriends.add_edge(0,3);
-		new_socialNetworkFriends.add_edge(1,2);
-		new_socialNetworkFriends.add_edge(1,0);
-		new_socialNetworkFriends.add_edge(2,3);
-		new_socialNetworkFriends.add_edge(2,0);
-		new_socialNetworkFriends.add_edge(3,1);
+	new_socialNetworkFriends.add_vertex(newFriend0);
+	new_socialNetworkFriends.add_vertex(newFriend1); 
+	new_socialNetworkFriends.add_vertex(newFriend2); 
+	new_socialNetworkFriends.add_vertex(newFriend3);
+	new_socialNetworkFriends.add_edge(0,2);
+	new_socialNetworkFriends.add_edge(0,3);
+	new_socialNetworkFriends.add_edge(1,2);
+	new_socialNetworkFriends.add_edge(1,0);
+	new_socialNetworkFriends.add_edge(2,3);
+	new_socialNetworkFriends.add_edge(2,0);
+	new_socialNetworkFriends.add_edge(3,1);
         System.out.println("The vertices in graph #2 have an even number of edges: " + new_socialNetworkFriends.areAllEven());
         System.out.println();
 
-        
         HashSet<Integer> newFollowers0 = new_socialNetworkFriends.neighbors(0);
         System.out.println("June's followers:");
         for(Integer vertex: newFollowers0)
