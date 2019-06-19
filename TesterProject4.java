@@ -50,10 +50,10 @@ public class TesterProject4 {
         System.out.println();
         
 /**
- * graph #1 above, socialNetworkFriends, have an odd number of edges;
- * graph #2 below, new_socialNetworkFriends, have an even number of edges;
+ * graph #1 above, socialNetworkFriends, has an odd number of edges;
+ * graph #2 below, new_socialNetworkFriends, has an even number of edges;
  * 
- * The method, areAllEven(), will return false for graph #1 and return true for graph #2
+ * The method, areAllEven(), will return false for graph #1, and return true for graph #2
  */
         
         Item newFriend0 = new Item("June");
