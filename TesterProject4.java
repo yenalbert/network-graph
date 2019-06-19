@@ -108,6 +108,6 @@ public class TesterProject4 {
             System.out.println(new_socialNetworkFriends.get_label(vertex));
         }        
         System.out.println();
+		
 	}
-	
 }
